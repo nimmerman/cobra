@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D8A16A111B3E8C7600584314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A16A101B3E8C7600584314 /* AppDelegate.swift */; };
-		D8A16A131B3E8C7600584314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A16A121B3E8C7600584314 /* ViewController.swift */; };
 		D8A16A161B3E8C7600584314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A16A141B3E8C7600584314 /* Main.storyboard */; };
 		D8A16A181B3E8C7600584314 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A16A171B3E8C7600584314 /* Images.xcassets */; };
 		D8A16A1B1B3E8C7600584314 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A16A191B3E8C7600584314 /* LaunchScreen.xib */; };
 		D8A16A271B3E8C7600584314 /* cobraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A16A261B3E8C7600584314 /* cobraTests.swift */; };
+		D8A16A311B3E8E1800584314 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A16A301B3E8E1800584314 /* Ride.swift */; };
+		D8A16A331B3E8E6F00584314 /* RidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A16A321B3E8E6F00584314 /* RidesTableViewController.swift */; };
+		D8A16A351B3E8EAA00584314 /* RidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A16A341B3E8EAA00584314 /* RidesViewController.swift */; };
+		D8A16A371B3E937D00584314 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A16A361B3E937D00584314 /* libz.dylib */; };
+		D8A16A3B1B3E940600584314 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A16A3A1B3E940600584314 /* Gimbal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,18 @@
 		D8A16A0B1B3E8C7600584314 /* cobra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cobra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A16A0F1B3E8C7600584314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A16A101B3E8C7600584314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8A16A121B3E8C7600584314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8A16A151B3E8C7600584314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8A16A171B3E8C7600584314 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8A16A1A1B3E8C7600584314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D8A16A201B3E8C7600584314 /* cobraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cobraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A16A251B3E8C7600584314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A16A261B3E8C7600584314 /* cobraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cobraTests.swift; sourceTree = "<group>"; };
+		D8A16A301B3E8E1800584314 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		D8A16A321B3E8E6F00584314 /* RidesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidesTableViewController.swift; sourceTree = "<group>"; };
+		D8A16A341B3E8EAA00584314 /* RidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidesViewController.swift; sourceTree = "<group>"; };
+		D8A16A361B3E937D00584314 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D8A16A3A1B3E940600584314 /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gimbal.framework; sourceTree = "<group>"; };
+		D8A16A3C1B3E946600584314 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A16A3B1B3E940600584314 /* Gimbal.framework in Frameworks */,
+				D8A16A371B3E937D00584314 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +70,8 @@
 		D8A16A021B3E8C7600584314 = {
 			isa = PBXGroup;
 			children = (
+				D8A16A3A1B3E940600584314 /* Gimbal.framework */,
+				D8A16A361B3E937D00584314 /* libz.dylib */,
 				D8A16A0D1B3E8C7600584314 /* cobra */,
 				D8A16A231B3E8C7600584314 /* cobraTests */,
 				D8A16A0C1B3E8C7600584314 /* Products */,
@@ -78,11 +91,13 @@
 			isa = PBXGroup;
 			children = (
 				D8A16A101B3E8C7600584314 /* AppDelegate.swift */,
-				D8A16A121B3E8C7600584314 /* ViewController.swift */,
 				D8A16A141B3E8C7600584314 /* Main.storyboard */,
+				D8A16A341B3E8EAA00584314 /* RidesViewController.swift */,
 				D8A16A171B3E8C7600584314 /* Images.xcassets */,
 				D8A16A191B3E8C7600584314 /* LaunchScreen.xib */,
 				D8A16A0E1B3E8C7600584314 /* Supporting Files */,
+				D8A16A301B3E8E1800584314 /* Ride.swift */,
+				D8A16A321B3E8E6F00584314 /* RidesTableViewController.swift */,
 			);
 			path = cobra;
 			sourceTree = "<group>";
@@ -91,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A16A0F1B3E8C7600584314 /* Info.plist */,
+				D8A16A3C1B3E946600584314 /* bridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A16A131B3E8C7600584314 /* ViewController.swift in Sources */,
 				D8A16A111B3E8C7600584314 /* AppDelegate.swift in Sources */,
+				D8A16A331B3E8E6F00584314 /* RidesTableViewController.swift in Sources */,
+				D8A16A351B3E8EAA00584314 /* RidesViewController.swift in Sources */,
+				D8A16A311B3E8E1800584314 /* Ride.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +358,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nathan/Downloads/gimbalsdk_2-2/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = cobra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = cobra/bridge.h;
 			};
 			name = Debug;
 		};
@@ -350,9 +375,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nathan/Downloads/gimbalsdk_2-2/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = cobra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = cobra/bridge.h;
 			};
 			name = Release;
 		};
